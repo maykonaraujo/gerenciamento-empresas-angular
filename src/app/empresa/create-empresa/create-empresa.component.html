@@ -1,0 +1,16 @@
+<h3>Criar Empresa</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" required [(ngModel)]="empresa.nome" name="nome">
+    </div>
+
+    <div class="form-group">
+      <label for="cnpj">CNPJ</label>
+      <input type="text" class="form-control" id="cnpj" [(ngModel)]="empresa.cnpj" name="cnpj">
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+  </form>
+</div>

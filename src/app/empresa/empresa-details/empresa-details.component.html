@@ -1,0 +1,15 @@
+<h2>Empresa Detalhes</h2> 
+
+<hr/>
+<div *ngIf="empresa">
+  <div>
+    <label><b>Nome:  </b></label> {{empresa.nome}}
+  </div>
+  <div>
+    <label><b> CNPJ: </b></label> {{empresa.cnpj}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Voltar</button><br>
